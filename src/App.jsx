@@ -72,7 +72,7 @@ function App() {
           </div>
 
           <div className="highlight-bar">
-            <span>Da nossa família para a sua, o cuidado e a atenção que o seu carro merece.</span>
+            <span className='texto-decorado'>Da nossa família para a sua, o cuidado e a atenção que o seu carro merece.</span>
             <img src="/logo-completa.png" alt="Pai e Filho" className="logo-small-right" />
           </div>
 
