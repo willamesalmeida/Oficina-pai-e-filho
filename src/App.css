@@ -1,7 +1,8 @@
 /* WRAPPER PRINCIPAL */
 .site-wrapper {
   width: 100%;
-  display: block; /* Garante que as seções fiquem uma abaixo da outra */
+  display: block;
+  /* Garante que as seções fiquem uma abaixo da outra */
 }
 
 /* PRIMEIRA SEÇÃO: HERO */
@@ -33,7 +34,7 @@
   border: 6px solid #fff;
   overflow: hidden;
   flex-shrink: 0;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .mecanico-circle img {
@@ -46,7 +47,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: relative; /* Para a logo absoluta funcionar */
+  position: relative;
+  /* Para a logo absoluta funcionar */
 }
 
 .label-oficina {
@@ -102,7 +104,8 @@
 .logo-hero {
   width: 220px;
   margin-top: 40px;
-  align-self: flex-end; /* Joga para a direita sem quebrar o topo */
+  align-self: flex-end;
+  /* Joga para a direita sem quebrar o topo */
 }
 
 /* SEGUNDA SEÇÃO: HISTÓRIA */
@@ -145,8 +148,10 @@
   justify-content: space-between;
   align-items: center;
   border-left: 10px solid #ff9c00;
-  padding: 35px 45px; /* Aumentei um pouco o respiro interno */
-  gap: 20px; /* Espaço entre o texto e a logo */
+  padding: 35px 45px;
+  /* Aumentei um pouco o respiro interno */
+  gap: 20px;
+  /* Espaço entre o texto e a logo */
 }
 
 .logo-small-right {
@@ -155,34 +160,185 @@
 
 /* RESPONSIVIDADE */
 @media (max-width: 1024px) {
-  .hero-container { flex-direction: column; text-align: center; }
-  .hero-content { align-items: center; }
-  .nome-pai-filho { font-size: 3.5rem; }
-  .engrenagem-o { height: 50px; }
-  .logo-hero { align-self: center; }
-  .highlight-bar { flex-direction: column; gap: 20px; }
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .nome-pai-filho {
+    font-size: 3.5rem;
+  }
+
+  .engrenagem-o {
+    height: 50px;
+  }
+
+  .logo-hero {
+    align-self: center;
+  }
+
+  .highlight-bar {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
+
 .texto-decorado {
   /* Aumenta o tamanho da fonte. Ajuste o valor conforme sua preferência */
-  font-size: 22px; 
-  
+  font-size: 22px;
+
   /* Deixa o texto mais "pesado" e visível */
-  font-weight: 800; 
-  
+  font-weight: 800;
+
   /* Melhora o espaçamento entre as linhas se o texto quebrar */
-  line-height: 1.2; 
-  
+  line-height: 1.2;
+
   /* Cor branca para contrastar com o fundo bordô */
   color: #ffffff;
-  
-  /* Garante que o texto ocupe um bom espaço antes de empurrar a logo */
-  max-width: 75%; 
 
-  
+  /* Garante que o texto ocupe um bom espaço antes de empurrar a logo */
+  max-width: 75%;
+
+
 }
+
 @media (max-width: 768px) {
   .texto-decorado {
-    font-size: 22px; /* Diminui um pouco apenas em telas pequenas */
+    font-size: 22px;
+    /* Diminui um pouco apenas em telas pequenas */
     max-width: 100%;
+  }
+}
+
+.sevices-section {
+  background-color: #240b0b;
+  width: 100%;
+  padding: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+}
+.services-header {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Mantém tudo alinhado à esquerda como na referência */
+  position: relative;
+}
+.services-subtitle {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.servicos-titulo-img {
+  height: 100px; /* Ajuste a altura para ficar proporcional ao PDF */
+  width: auto;
+  display: block;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.services-subtitle{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 25px;
+  margin-top: 60px;
+}
+.service-card{
+  background-color: #4a0a0a;
+  border-radius: 20px;
+  padding: 30px 20px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.service-card h3{
+color: #fff;
+font-size: 20px;
+font-weight: 800;
+margin-bottom: 12px;
+border-bottom: 2px solid #ff9c00;
+display: inline-block;
+padding-bottom: 5px;
+}
+.service-card p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+.engrenagem-topo-dir {
+  position: absolute;
+  top: -20px;
+  right: 15%;
+  height: 130px;
+  opacity: 0.6;
+  z-index: 1;
+}
+/* MASCOTES E DECORAÇÃO */
+.mascote-mecanico-1 {
+  position: absolute;
+  top: -100px;
+  left: -20px;
+  height: 200px;
+  z-index: 5;
+}
+
+.mascote-mecanico-2 {
+  position: absolute;
+  top: -110px;
+  right: -20px;
+  height: 210px;
+  z-index: 5;
+}
+
+.engrenagem-topo-dir {
+  position: absolute;
+  top: -40px;
+  right: 10%;
+  height: 120px;
+  opacity: 0.8;
+}
+
+.engrenagem-decorativa-bottom {
+  position: absolute;
+  bottom: -40px;
+  right: -50px;
+  height: 180px;
+  opacity: 0.5;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px 20px; /* Mais espaço para os mascotes não baterem */
+  }
+  .services-title { font-size: 45px; }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 }
