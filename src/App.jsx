@@ -157,17 +157,22 @@ function App() {
       <h2 className="location-title">Localização</h2>
 
       <div className="location-info-list">
+        {/* ITEM: ENDEREÇO */}
         <div className="info-row">
-          <MapPin size={40} color="#ff9c00" strokeWidth={3} />
+          <div className="icon-wrapper">
+            <img src="/pin-localizacao.svg" alt="Localização" className="custom-svg-icon" />
+          </div>
           <div className="info-content">
             <p>Tv. Benedito Loureiro II - Cidade Universitária</p>
             <p>Maceió - AL, 57073-511</p>
           </div>
         </div>
 
+        {/* ITEM: HORÁRIO */}
         <div className="info-row">
-          <img src="/relogio.png" alt="Horario" className='icon-relogios' />
-          <Clock size={40} color="#ff9c00" strokeWidth={3} />
+          <div className="icon-wrapper">
+            <img src="/relogio.svg" alt="Horário" className="custom-svg-icon" />
+          </div>
           <div className="info-content">
             <p>Seg-Sex: 8h às 18h | Sáb: 8h às 12h</p>
           </div>
@@ -175,8 +180,7 @@ function App() {
       </div>
 
       <a href="https://goo.gl/maps/seu-link-aqui" className="btn-maps" target="_blank" rel="noopener">
-      <img src="/pin-localizacao" alt="localização" className='icon-localizacao' />
-        <Navigation size={24} fill="white" />
+        {/* Aqui você pode usar uma seta branca ou ícone de navegação se tiver baixado também */}
         Ver no Mapa
       </a>
     </div>

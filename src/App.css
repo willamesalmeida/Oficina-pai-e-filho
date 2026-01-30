@@ -758,3 +758,62 @@
     display: none; /* Esconde a chave grande no mobile para não poluir */
   }
 }
+/* ESTILIZAÇÃO DOS NOVOS ÍCONES SVG */
+.icon-wrapper {
+  width: 60px; /* Largura fixa para manter o alinhamento do texto */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Impede que o ícone amasse em telas menores */
+}
+
+.custom-svg-icon {
+  width: 100%;
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+  /* Se os seus SVGs forem pretos e você quiser que fiquem laranjas via código: */
+  /* filter: brightness(0) saturate(100%) invert(68%) sepia(85%) saturate(1943%) hue-rotate(359deg) brightness(103%) contrast(106%); */
+}
+
+/* Ajuste fino na linha de informação para garantir alinhamento vertical */
+.info-row {
+  display: flex;
+  align-items: center; /* Alinha o centro do ícone com o centro do texto */
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+/* Ajuste no botão para não ficar vazio sem o ícone do lucide */
+.btn-maps {
+  padding: 18px 60px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-maps:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* No mobile, garantimos que o ícone não fique gigante */
+@media (max-width: 768px) {
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .custom-svg-icon {
+    max-height: 40px;
+  }
+}
+.custom-svg-icon {
+  width: 100%;
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+  
+  /* Esse filtro transforma ícones pretos no seu Laranja exato */
+  filter: invert(61%) sepia(94%) saturate(1455%) hue-rotate(3deg) brightness(105%) contrast(105%);
+}
