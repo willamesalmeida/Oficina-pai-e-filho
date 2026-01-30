@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body, html {
@@ -11,5 +12,9 @@ body, html {
   background-color: #240b0b;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  -webkit-font-smoothing: antialiased
   /* Removido o display: flex daqui, que era o que causava o erro */
+}
+h1, h2, h3, h4, h5, h6, p, span, a, button {
+  font-family: 'Montserrat', sans-serif;
 }

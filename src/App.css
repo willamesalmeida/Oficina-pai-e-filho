@@ -1,10 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap');
+
 /* WRAPPER PRINCIPAL */
 .site-wrapper {
   width: 100%;
   display: block;
   /* Garante que as seções fiquem uma abaixo da outra */
 }
+.img-titulo-pai-filho {
+  width: 100%;       /* Ela vai ocupar a largura do container de texto */
+  max-width: 600px;  /* Limita o tamanho máximo para não estourar */
+  height: auto;      /* Mantém a proporção */
+  display: block;
+  margin: 1px 0;    /* Espaçamento em cima e embaixo */
+  
+  /* Se a imagem tiver um "vazio" ao redor, você pode usar um margin-left negativo 
+     para alinhar o 'P' perfeitamente com o texto de baixo */
+  margin-left: -30px; 
+}
 
+/* Ajuste específico para o Mobile */
+@media (max-width: 768px) {
+  .img-titulo-pai-filho {
+    max-width: 90% ; /* No celular ela reduz proporcionalmente e não quebra */
+    margin: 10px auto; /* Centraliza se o resto do seu mobile for centralizado */
+  }
+}
 /* PRIMEIRA SEÇÃO: HERO */
 .hero-section {
   background-color: #240b0b;
@@ -48,15 +68,17 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  margin-top: 100px;
   /* Para a logo absoluta funcionar */
 }
 
 .label-oficina {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
   color: #ff9c00;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 4px;
+  margin-bottom: -28px;
 }
 
 .nome-pai-filho {
@@ -77,7 +99,7 @@
 
 .slogan-ano {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 }
 
 .texto-destaque {
@@ -89,16 +111,18 @@
 }
 
 .btn-whats {
-  background: #25D366;
+  background: linear-gradient(180deg, #25D366 0%, #128C7E 100%);
   color: white;
-  padding: 1rem 2rem;
+  padding: 20px 45px;
   border-radius: 50px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 800;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .logo-hero {
@@ -214,43 +238,42 @@
   }
 }
 
-.sevices-section {
+/* --- SEÇÃO 3: SERVIÇOS (CORRIGIDA) --- */
+.services-section {
   background-color: #240b0b;
   width: 100%;
-  padding: 100%;
+  padding: 120px 20px; /* Padding ajustado, sem o erro de 100% */
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .services-container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
-
 }
+
 .services-header {
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Mantém tudo alinhado à esquerda como na referência */
+  align-items: flex-start;
   position: relative;
-}
-.services-subtitle {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 400;
-  margin-top: 5px;
+  z-index: 2;
 }
 
 .servicos-titulo-img {
-  height: 100px; /* Ajuste a altura para ficar proporcional ao PDF */
+  height: 150px;
   width: auto;
   display: block;
   margin-bottom: 10px;
-  align-self: flex-start;
+  object-fit: contain;
 }
 
-.services-subtitle{
+.services-subtitle {
   font-size: 24px;
   color: #fff;
   font-weight: 400;
@@ -258,87 +281,279 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  margin-top: 60px;
+  margin-top: 80px;
 }
-.service-card{
+
+/* .service-card {
   background-color: #4a0a0a;
   border-radius: 20px;
-  padding: 30px 20px;
-  min-height: 280px;
+  padding: 35px 20px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+} */
+
+.service-card {
+  margin-left: 10px;
+  background-color: #4a0a0a;
+  border-radius: 20px;
+  padding: 30px 20px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  
+  /* MUDANÇA AQUI: Alinha o conteúdo começando pelo topo */
+  justify-content: flex-start; 
+  
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
-.service-card h3{
-color: #fff;
-font-size: 20px;
-font-weight: 800;
-margin-bottom: 12px;
-border-bottom: 2px solid #ff9c00;
-display: inline-block;
-padding-bottom: 5px;
+.service-card h3 {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  
+  /* Garante que o título fique no topo com um espaço */
+  margin-top: 10px; 
+  margin-bottom: 15px;
+  
+  border-bottom: 2px solid #ff9c00;
+  display: inline-block;
+  padding-bottom: 5px;
+  width: fit-content; /* Faz a linha laranja ter o tamanho do texto */
 }
+
+.service-card p {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #e0e0e0;
+  text-align: left; /* Mantém o texto alinhado à esquerda */
+}
+/* .service-card h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ff9c00;
+  display: inline-block;
+  padding-bottom: 5px;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
 .service-card p {
   font-size: 15px;
   line-height: 1.4;
   color: #e0e0e0;
+} */
+@media (max-width: 768px) {
+  .services-header {
+    display: block;      /* Remove o flex para não esmagar a imagem */
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .servicos-titulo-img {
+    /* Ajuste aqui: mude para 120px ou 140px se quiser ainda maior */
+    height: 100px !important; 
+    
+    width: auto !important;
+    max-width: none !important; /* Impede que o CSS limite a largura */
+    flex-shrink: 0;             /* Proíbe o navegador de encolher a foto */
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .services-subtitle {
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    width: 100%;
+  }
 }
-.engrenagem-topo-dir {
-  position: absolute;
-  top: -20px;
-  right: 15%;
-  height: 130px;
-  opacity: 0.6;
-  z-index: 1;
-}
-/* MASCOTES E DECORAÇÃO */
+/* MASCOTES */
 .mascote-mecanico-1 {
   position: absolute;
-  top: -100px;
-  left: -20px;
-  height: 200px;
-  z-index: 5;
+  top: 50%; /* Centraliza verticalmente em relação ao card */
+  left: -61px; /* Joga ele para fora do card na esquerda */
+  transform: translateY(-80%); /* Ajuste fino para subir ou descer */
+  height: 250px; /* Aumentei o tamanho */
+  z-index: 10;
 }
 
 .mascote-mecanico-2 {
   position: absolute;
-  top: -110px;
-  right: -20px;
-  height: 210px;
-  z-index: 5;
+  top: -125px; /* Ele fica por cima, "sentado" no card */
+  right: -15px; /* Levemente para fora na direita */
+  height: 200px; /* Maior, como na foto */
+  z-index: 10;
+  transform: translateY(-26%);
 }
 
+/* DECORAÇÕES */
 .engrenagem-topo-dir {
   position: absolute;
   top: -40px;
-  right: 10%;
-  height: 120px;
-  opacity: 0.8;
+  right: 5%;
+  height: 140px;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .engrenagem-decorativa-bottom {
   position: absolute;
-  bottom: -40px;
-  right: -50px;
-  height: 180px;
-  opacity: 0.5;
+  bottom: -90px; /* Força ela para o canto extremo */
+  right: -150px; /* Força para o canto extremo */
+  height: 450px; /* Ela é bem grande na referência */
+  opacity: 0.6; /* Mais suave para não cobrir o texto */
+  transform: translateX(5%) rotate(5deg) translateY(40%); /* Uma leve inclinação para dar movimento */
+  pointer-events: none; /* Garante que não atrapalhe cliques */
+  transform: x;
+}
+.services-section {
+  overflow: visible; /* Mudamos de hidden para visible para os bonecos aparecerem */
+  padding: 150px 20px; /* Aumentei o respiro para os bonecos terem espaço */
 }
 
-/* RESPONSIVIDADE PARA CELULAR */
-@media (max-width: 1024px) {
+.services-container {
+  overflow: visible;
+}
+
+/* AJUSTE RESPONSIVO */
+@media (max-width: 1100px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 120px 20px; /* Mais espaço para os mascotes não baterem */
+    gap: 130px 25px;
   }
-  .services-title { font-size: 45px; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 140px 0;
+  }
+  .servicos-titulo-img { height: 60px; }
+}
+/* --- SEÇÃO 4: CTA FINAL --- */
+/* --- SEÇÃO 4: CTA FINAL (AJUSTADA PARA TELA CHEIA) --- */
+.cta-section {
+  width: 100%;
+  /* MUDANÇA: Agora ocupa no mínimo a tela inteira */
+  min-height: 100vh; 
+  
+  background-image: url('/fundo-oficina-rodape.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Garante que as engrenagens não criem rolagem estranha */
+}
+
+.cta-overlay {
+  background-color: rgba(36, 11, 11, 0.85); /* Tom bordô combinando com o fundo do site */
+  width: 100%;
+  /* MUDANÇA: Garante que o overlay também cubra toda a altura */
+  min-height: 100vh; 
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.cta-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  /* Dá um espaço interno para o conteúdo respirar no centro */
+  padding: 60px 0;
+}
+
+.cta-text {
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+/* BOTÃO GRANDE WHATSAPP */
+.btn-whats-large {
+  background: linear-gradient(180deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  padding: 20px 45px;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.btn-whats-large:hover {
+  transform: scale(1.05);
+}
+
+/* DECORAÇÕES */
+.gears-cta-top {
+  position: absolute;
+  top: -100px;
+  left: -150px;
+  height: 150px;
+  opacity: 0.6;
+}
+
+.engrenagens-footer {
+  position: absolute;
+  bottom: -60px;
+  left: -100px;
+  height: 120px;
+  opacity: 0.8;
+}
+
+.chave-footer {
+  position: absolute;
+  bottom: -60px;
+  right: -100px;
+  height: 100px;
+  opacity: 0.8;
+  width: 50%;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .cta-text {
+    font-size: 28px;
+  }
+  
+  .btn-whats-large {
+    font-size: 18px;
+    padding: 15px 30px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Esconde decorações muito grandes no mobile para não poluir */
+  .gears-cta-top, .wrench-footer {
+    display: none;
   }
 }
