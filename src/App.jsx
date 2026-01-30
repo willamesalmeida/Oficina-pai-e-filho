@@ -180,6 +180,7 @@ function App() {
       </div>
 
       <a href="https://goo.gl/maps/seu-link-aqui" className="btn-maps" target="_blank" rel="noopener">
+      <img src="/pin-localizacao.svg" alt="Navegar" className="icon-btn-maps" />
         {/* Aqui você pode usar uma seta branca ou ícone de navegação se tiver baixado também */}
         Ver no Mapa
       </a>
