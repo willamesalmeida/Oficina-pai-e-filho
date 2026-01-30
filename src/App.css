@@ -637,11 +637,11 @@
     min-height: 80vh;    /* No mobile pode ser um pouco menor que 100vh */
   }
 }
-/* --- SEÇÃO 5: LOCALIZAÇÃO --- */
+/* --- SEÇÃO 5: LOCALIZAÇÃO (CORREÇÃO) --- */
 .location-section {
   width: 100%;
   min-height: 100vh;
-  background-image: url('/fundo-oficina-rodape.jpg'); /* O mesmo fundo da anterior */
+  background-image: url('/fundo-oficina-rodape.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -649,81 +649,112 @@
   overflow: hidden;
 }
 
-.location-container {
-  max-width: 900px;
+.location-overlay {
+  background-color: rgba(36, 11, 11, 0.85);
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: flex-start; /* Alinha o conteúdo à ESQUERDA */
+  padding: 60px 10%; /* Dá um recuo na esquerda */
+}
+
+.location-container {
+  max-width: 800px;
   z-index: 2;
-  text-align: left; /* Alinhado à esquerda conforme a foto */
-  padding: 40px;
+  position: relative;
 }
 
 .location-title {
-  font-size: 80px; /* Título bem grande como na foto */
+  font-size: 85px; /* Tamanho gigante do design */
   font-weight: 900;
   color: #ff9c00;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  text-transform: none;
 }
 
-.location-info-grid {
+.location-info-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-bottom: 50px;
+  gap: 40px;
+  margin-bottom: 60px;
 }
 
-.info-item {
+.info-row {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
-.info-text p {
-  font-size: 22px;
+.info-content p {
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.3;
+  color: #fff;
+  line-height: 1.2;
 }
 
-/* BOTÃO VER NO MAPA */
 .btn-maps {
   background: linear-gradient(90deg, #ff9c00 0%, #d40000 100%);
   color: white;
-  padding: 15px 40px;
+  padding: 18px 45px;
   border-radius: 50px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  gap: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-/* DECORAÇÕES ESPECÍFICAS */
+/* DECORAÇÕES */
 .gears-location-left {
   position: absolute;
-  bottom: -50px;
-  left: -50px;
-  height: 250px;
-  opacity: 0.8;
-  z-index: 1;
+  bottom: -80px;
+  left: -80px;
+  height: 300px;
+  opacity: 0.6;
+  transform: rotate(20deg);
 }
 
 .wrench-location-right {
   position: absolute;
-  right: 20px;
+  right: 50px;
   top: 50%;
-  transform: translateY(-50%);
-  height: 450px; /* Chaves bem grandes na vertical */
-  z-index: 1;
+  transform: translateY(-50%) rotate(-10deg);
+  height: 500px; /* Chave bem grande na lateral */
+  opacity: 0.8;
 }
 
-/* MOBILE */
+/* RESPONSIVIDADE MOBILE */
 @media (max-width: 768px) {
-  .location-title { font-size: 45px; }
-  .info-text p { font-size: 16px; }
-  .wrench-location-right {
-    height: 200px;
-    right: -20px;
+  .location-overlay {
+    padding: 60px 20px;
+    justify-content: center; /* No mobile volta a centralizar */
   }
-  .location-container { padding: 20px; }
+
+  .location-title {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .info-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .info-content p {
+    font-size: 18px;
+  }
+
+  .btn-maps {
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .wrench-location-right {
+    display: none; /* Esconde a chave grande no mobile para não poluir */
+  }
 }
