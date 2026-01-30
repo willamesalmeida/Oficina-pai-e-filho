@@ -1,0 +1,284 @@
+.hero-section {
+  background: #4a0000;           /* Cor exata do fundo da referência */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 5%;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  /* ADICIONE UMA MARGEM NEGATIVA À ESQUERDA: */
+  /* Isso puxa o bloco de texto para cima da área da foto */
+  margin-left: -30px; 
+  
+  position: relative;
+  background-color: #240b0b;
+  min-height: 100vh;
+  width: 100vw; /* Força a largura total da janela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  /* Se você estiver usando imagem de fundo, garanta que ela cubra tudo: */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  
+  /* DIMINUA ESTE VALOR: */
+  /* De 60px para 20px, por exemplo, para colar mais os textos na foto */
+  gap: 80px; 
+  
+  /* Mude de 'space-between' para 'center' se quiser que o conjunto todo 
+     fique centralizado no meio da tela e não espalhado */
+  justify-content: center; 
+  
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o bloco de conteúdo */
+  width: 100%;
+  max-width: 1200px; /* Limita o conteúdo para não espalhar demais em telas gigantes */
+}
+
+.mecanico-circle {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  flex-shrink: 0;
+}
+
+.mecanico-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+}
+
+.label-oficina {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff9c00;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.nome-pai-filho {
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 0;
+  color: #ff9c00;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.engrenagem-o {
+  width: 68px;
+  height: auto;
+  margin-bottom: -12px; 
+  transform: translateY(-8px);  /* Ajuste fino para alinhar visualmente */
+}
+
+.slogan-ano {
+  font-size: 1.35rem;
+  opacity: 0.95;
+  margin: 0.8rem 0 0.4rem;
+  font-weight: 500;
+  
+}
+
+.texto-destaque {
+  font-size: 1.55rem;
+  line-height: 1.4;
+  max-width: 520px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.btn-whats {
+  background: #25D366;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 0.8rem;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.btn-whats:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5);
+}
+
+.logo-hero {
+  width: 180px;
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  opacity: 0.9;
+  display: flex;
+  justify-content: flex-end;
+    /* margin-top: 60px;  */
+  
+  /* Ajuste fino opcional: */
+  transform: translateY(50%);
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  .mecanico-circle {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  .nome-pai-filho { font-size: 3.8rem; }
+ .engrenagem-o {
+  height: 55px;
+  width: 55px;      
+  /* margin-left: 1px;     */
+  transform: translateY(-8px); 
+  vertical-align: middle; 
+}
+  .logo-hero {
+    position: static;
+    margin: 2rem auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nome-pai-filho { font-size: 3.2rem; }
+  .btn-whats { font-size: 1.1rem; padding: 0.9rem 1.8rem; }
+}
+/* --- ESTILOS DA SEGUNDA SEÇÃO (HISTÓRIA) --- */
+/* --- SEGUNDA SEÇÃO: HISTÓRIA --- */
+.history-section {
+  /* Remova o min-height: 100vh se quiser que elas fiquem mais próximas */
+  width: 100%;
+  padding: 100px 20px; /* Espaço generoso em cima e embaixo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(20, 5, 5, 0.92), rgba(20, 5, 5, 0.92)), url('/fundo-oficina-interna.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll; /* Garante que o fundo acompanhe o movimento */
+}
+
+.history-container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Ajuste para o texto não ficar colado nas bordas */
+.history-text {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Imagem "Oficina" + Engrenagem que você já tem pronta */
+.oficina-logo-text {
+  height: 90px;
+  width: auto;
+  align-self: flex-start; /* Garante que fique na esquerda */
+}
+
+.history-text {
+  color: #ffffff;
+  font-size: 24px; /* Tamanho confortável para leitura */
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: left;
+  max-width: 900px;
+}
+
+/* Estilo para os destaques em negrito (tags <b>) */
+.history-text b {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+/* A faixa bordô com a frase e a logo */
+.highlight-bar {
+  background-color: #4a1313; /* Cor Bordô Escuro */
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between; /* Texto na esquerda, Logo na direita */
+  align-items: center;
+  border-left: 10px solid #f18a21; /* Detalhe laranja igual ao PDF */
+  margin-top: 20px;
+}
+
+.highlight-bar span {
+  font-size: 20px;
+  font-weight: 700;
+  max-width: 70%;
+  line-height: 1.3;
+}
+
+.logo-small-right {
+  width: 200px;
+  height: auto;
+}
+
+/* Ajustes para telas de celular */
+@media (max-width: 768px) {
+  .history-text {
+    font-size: 18px;
+  }
+  
+  .highlight-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .highlight-bar span {
+    max-width: 100%;
+  }
+
+  .oficina-logo-text {
+    height: 60px;
+  }
+}
