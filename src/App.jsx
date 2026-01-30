@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react'; // Melhor que Phone para WhatsApp
+import { MapPin, Clock, Navigation } from 'lucide-react'; // Adicione Navigation e MapPin aqui
 import './App.css';
 
 function App() {
@@ -145,6 +146,42 @@ function App() {
           </div>
         </div>
       </section>
+
+{/* SEÇÃO 5: LOCALIZAÇÃO */}
+<section className="location-section">
+  <div className="location-overlay">
+    
+    <img src="/engrenagem-footer.png" alt="" className="gears-location-left" />
+
+    <div className="location-container">
+      <h2 className="location-title">Localização</h2>
+
+      <div className="location-info-list">
+        <div className="info-row">
+          <MapPin size={40} color="#ff9c00" strokeWidth={3} />
+          <div className="info-content">
+            <p>Tv. Benedito Loureiro II - Cidade Universitária</p>
+            <p>Maceió - AL, 57073-511</p>
+          </div>
+        </div>
+
+        <div className="info-row">
+          <Clock size={40} color="#ff9c00" strokeWidth={3} />
+          <div className="info-content">
+            <p>Seg-Sex: 8h às 18h | Sáb: 8h às 12h</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://goo.gl/maps/seu-link-aqui" className="btn-maps" target="_blank" rel="noopener">
+        <Navigation size={24} fill="white" />
+        Ver no Mapa
+      </a>
+    </div>
+
+    <img src="/chave-decorativa.png" alt="" className="wrench-location-right" />
+  </div>
+</section>
     </main>
   );
 }
