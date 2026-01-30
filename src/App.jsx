@@ -166,6 +166,7 @@ function App() {
         </div>
 
         <div className="info-row">
+          <img src="/relogio.png" alt="Horario" className='icon-relogios' />
           <Clock size={40} color="#ff9c00" strokeWidth={3} />
           <div className="info-content">
             <p>Seg-Sex: 8h às 18h | Sáb: 8h às 12h</p>
@@ -174,6 +175,7 @@ function App() {
       </div>
 
       <a href="https://goo.gl/maps/seu-link-aqui" className="btn-maps" target="_blank" rel="noopener">
+      <img src="/pin-localizacao" alt="localização" className='icon-localizacao' />
         <Navigation size={24} fill="white" />
         Ver no Mapa
       </a>
