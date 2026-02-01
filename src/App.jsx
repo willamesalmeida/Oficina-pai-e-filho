@@ -1,6 +1,5 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react'; // Melhor que Phone para WhatsApp
-import { MapPin, Clock, Navigation } from 'lucide-react'; // Adicione Navigation e MapPin aqui
 import './App.css';
 
 function App() {
