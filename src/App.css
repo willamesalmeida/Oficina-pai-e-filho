@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap');
 
+
+/* AJUSTES EXCLUSIVOS PARA MOBILE (ATÉ 768px) */
+@media (max-width: 768px) {
+  
+  /* Impede que o corpo do site estique para os lados */
+  html, body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .site-wrapper {
+    overflow-x: hidden;
+  }
+
+  /* RECOLHENDO AS DECORAÇÕES: 
+     Geralmente o erro está aqui, onde o 'right' ou 'left' negativo 
+     é maior que o tamanho da imagem */
+  
+  .gears-cta-top, 
+  .engrenagens-footer, 
+  .chave-footer,
+  .engrenagem-decorativa-bottom,
+  .gears-location-left,
+  .wrench-location-right {
+    max-width: 150px; /* Reduz o tamanho das peças no mobile */
+    /* Garante que nada que esteja posicionado para fora force a barra de rolagem */
+  }
+
+  /* Seção 5: Ajuste de largura para não empurrar a tela */
+  .location-container {
+    max-width: 100%;
+    overflow: hidden; /* Garante que o container não 'vaze' */
+  }
+}
+
 /* WRAPPER PRINCIPAL */
 .site-wrapper {
   width: 100%;
