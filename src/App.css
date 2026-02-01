@@ -24,6 +24,26 @@
     max-width: 90% ; /* No celular ela reduz proporcionalmente e não quebra */
     margin: 10px auto; /* Centraliza se o resto do seu mobile for centralizado */
   }
+  .mecanico-circle {
+    /* Reduzindo para 260px apenas no mobile para não cortar nas laterais */
+    width: 260px !important; 
+    height: 260px !important;
+    
+    /* Centraliza o círculo horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Ajusta a borda para não parecer bruta demais no tamanho menor */
+    border-width: 4px; 
+    
+    /* Garante que o círculo não seja empurrado por flex-containers */
+    flex-shrink: 0;
+  }
+
+  .mecanico-circle img {
+    /* Garante que a foto preencha o novo tamanho sem distorcer */
+    object-fit: cover;
+  }
 }
 /* PRIMEIRA SEÇÃO: HERO */
 .hero-section {
