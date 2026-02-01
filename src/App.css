@@ -15,6 +15,7 @@
 }
 .img-titulo-pai-filho {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   width: 100%;       /* Ela vai ocupar a largura do container de texto */
 
@@ -42,6 +43,8 @@
     margin: 0 auto !important; /* Centralizar */
   }
 =======
+=======
+>>>>>>> parent of 968b0bd (Update App.css)
   width: 100%;       /* Ela vai ocupar a largura do container de texto */
   max-width: 600px;  /* Limita o tamanho máximo para não estourar */
   height: auto;      /* Mantém a proporção */
@@ -51,6 +54,9 @@
   /* Se a imagem tiver um "vazio" ao redor, você pode usar um margin-left negativo 
      para alinhar o 'P' perfeitamente com o texto de baixo */
   margin-left: -30px; 
+<<<<<<< HEAD
+>>>>>>> parent of 968b0bd (Update App.css)
+=======
 >>>>>>> parent of 968b0bd (Update App.css)
 }
 
@@ -60,6 +66,7 @@
 @media (max-width: 768px) {
 
   .img-titulo-pai-filho {
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     max-width: 85%;          /* Dá um respiro nas laterais */
@@ -135,9 +142,15 @@
     margin: 10px auto; /* Centraliza se o resto do seu mobile for centralizado */
   }
 >>>>>>> parent of 968b0bd (Update App.css)
+=======
+    max-width: 90% ; /* No celular ela reduz proporcionalmente e não quebra */
+    margin: 10px auto; /* Centraliza se o resto do seu mobile for centralizado */
+  }
+>>>>>>> parent of 968b0bd (Update App.css)
   .mecanico-circle {
 
     /* Reduzindo para 260px apenas no mobile para não cortar nas laterais */
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     width: 370px !important;
@@ -151,11 +164,17 @@
     height: 260px !important;
     
 >>>>>>> parent of 968b0bd (Update App.css)
+=======
+    width: 260px !important; 
+    height: 260px !important;
+    
+>>>>>>> parent of 968b0bd (Update App.css)
     /* Centraliza o círculo horizontalmente */
 
     margin-left: auto;
 
     margin-right: auto;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
    
@@ -166,6 +185,12 @@
 
    
 
+=======
+    
+    /* Ajusta a borda para não parecer bruta demais no tamanho menor */
+    border-width: 4px; 
+    
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     
     /* Ajusta a borda para não parecer bruta demais no tamanho menor */
@@ -212,8 +237,23 @@
   overflow: hidden;
 
 }
+<<<<<<< HEAD
 
 
+=======
+/* PRIMEIRA SEÇÃO: HERO */
+.hero-section {
+  background-color: #240b0b;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+>>>>>>> parent of 968b0bd (Update App.css)
 
 .hero-container {
 
@@ -623,9 +663,13 @@
 
   width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   padding: 120px 20px; /* Padding ajustado, sem o erro de 100% */
 
+=======
+  padding: 120px 20px; /* Padding ajustado, sem o erro de 100% */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   padding: 120px 20px; /* Padding ajustado, sem o erro de 100% */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -755,6 +799,7 @@
 
   flex-direction: column;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  
 
@@ -774,6 +819,14 @@
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
+=======
+  
+  /* MUDANÇA AQUI: Alinha o conteúdo começando pelo topo */
+  justify-content: flex-start; 
+  
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+>>>>>>> parent of 968b0bd (Update App.css)
 }
 .service-card h3 {
 
@@ -784,6 +837,7 @@
   font-size: 20px;
 
   font-weight: 800;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
  
@@ -803,15 +857,26 @@
   margin-bottom: 15px;
   
 >>>>>>> parent of 968b0bd (Update App.css)
+=======
+  
+  /* Garante que o título fique no topo com um espaço */
+  margin-top: 10px; 
+  margin-bottom: 15px;
+  
+>>>>>>> parent of 968b0bd (Update App.css)
   border-bottom: 2px solid #ff9c00;
 
   display: inline-block;
 
   padding-bottom: 5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   width: fit-content; /* Faz a linha laranja ter o tamanho do texto */
 
+=======
+  width: fit-content; /* Faz a linha laranja ter o tamanho do texto */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   width: fit-content; /* Faz a linha laranja ter o tamanho do texto */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -830,6 +895,7 @@
   line-height: 1.4;
 
   color: #e0e0e0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   text-align: left; /* Mantém o texto alinhado à esquerda */
@@ -865,6 +931,23 @@
 }
 
 
+=======
+  text-align: left; /* Mantém o texto alinhado à esquerda */
+}
+/* .service-card h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ff9c00;
+  display: inline-block;
+  padding-bottom: 5px;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+>>>>>>> parent of 968b0bd (Update App.css)
 
 .service-card p {
 
@@ -880,9 +963,13 @@
 
   .services-header {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     display: block;      /* Remove o flex para não esmagar a imagem */
 
+=======
+    display: block;      /* Remove o flex para não esmagar a imagem */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     display: block;      /* Remove o flex para não esmagar a imagem */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -900,6 +987,7 @@
 
     /* Ajuste aqui: mude para 120px ou 140px se quiser ainda maior */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     height: 100px !important;
 
@@ -911,6 +999,13 @@
 
     flex-shrink: 0;             /* Proíbe o navegador de encolher a foto */
 
+=======
+    height: 100px !important; 
+    
+    width: auto !important;
+    max-width: none !important; /* Impede que o CSS limite a largura */
+    flex-shrink: 0;             /* Proíbe o navegador de encolher a foto */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     height: 100px !important; 
     
@@ -963,12 +1058,25 @@
   z-index: 10;
 
 }
+<<<<<<< HEAD
 
 
+=======
+/* MASCOTES */
+.mascote-mecanico-1 {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente em relação ao card */
+  left: -61px; /* Joga ele para fora do card na esquerda */
+  transform: translateY(-80%); /* Ajuste fino para subir ou descer */
+  height: 250px; /* Aumentei o tamanho */
+  z-index: 10;
+}
+>>>>>>> parent of 968b0bd (Update App.css)
 
 .mascote-mecanico-2 {
 
   position: absolute;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   top: -125px; /* Ele fica por cima, "sentado" no card */
@@ -977,6 +1085,11 @@
 
   height: 200px; /* Maior, como na foto */
 
+=======
+  top: -125px; /* Ele fica por cima, "sentado" no card */
+  right: -15px; /* Levemente para fora na direita */
+  height: 200px; /* Maior, como na foto */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   top: -125px; /* Ele fica por cima, "sentado" no card */
   right: -15px; /* Levemente para fora na direita */
@@ -1014,6 +1127,7 @@
 
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   bottom: -90px; /* Força ela para o canto extremo */
 
@@ -1028,12 +1142,17 @@
   pointer-events: none; /* Garante que não atrapalhe cliques */
 
 =======
+=======
+>>>>>>> parent of 968b0bd (Update App.css)
   bottom: -90px; /* Força ela para o canto extremo */
   right: -150px; /* Força para o canto extremo */
   height: 450px; /* Ela é bem grande na referência */
   opacity: 0.6; /* Mais suave para não cobrir o texto */
   transform: translateX(5%) rotate(5deg) translateY(40%); /* Uma leve inclinação para dar movimento */
   pointer-events: none; /* Garante que não atrapalhe cliques */
+<<<<<<< HEAD
+>>>>>>> parent of 968b0bd (Update App.css)
+=======
 >>>>>>> parent of 968b0bd (Update App.css)
   transform: x;
 
@@ -1050,8 +1169,15 @@
   padding: 150px 20px; /* Aumentei o respiro para os bonecos terem espaço */
 >>>>>>> parent of 968b0bd (Update App.css)
 }
+<<<<<<< HEAD
 
 
+=======
+.services-section {
+  overflow: visible; /* Mudamos de hidden para visible para os bonecos aparecerem */
+  padding: 150px 20px; /* Aumentei o respiro para os bonecos terem espaço */
+}
+>>>>>>> parent of 968b0bd (Update App.css)
 
 .services-container {
 
@@ -1084,6 +1210,7 @@
     grid-template-columns: 1fr;
 
     gap: 140px 0;
+<<<<<<< HEAD
 
   }
 <<<<<<< HEAD
@@ -1091,6 +1218,10 @@
   .servicos-titulo-img { height: 60px; }
 
 =======
+  .servicos-titulo-img { height: 60px; }
+>>>>>>> parent of 968b0bd (Update App.css)
+=======
+  }
   .servicos-titulo-img { height: 60px; }
 >>>>>>> parent of 968b0bd (Update App.css)
 }
@@ -1104,11 +1235,16 @@
 
   /* MUDANÇA: Agora ocupa no mínimo a tela inteira */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   min-height: 100vh;
 
  
 
+=======
+  min-height: 100vh; 
+  
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   min-height: 100vh; 
   
@@ -1129,9 +1265,13 @@
 
   position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   overflow: hidden; /* Garante que as engrenagens não criem rolagem estranha */
 
+=======
+  overflow: hidden; /* Garante que as engrenagens não criem rolagem estranha */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   overflow: hidden; /* Garante que as engrenagens não criem rolagem estranha */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1141,9 +1281,13 @@
 
 .cta-overlay {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   background-color: rgba(36, 11, 11, 0.85); /* Tom bordô combinando com o fundo do site */
 
+=======
+  background-color: rgba(36, 11, 11, 0.85); /* Tom bordô combinando com o fundo do site */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   background-color: rgba(36, 11, 11, 0.85); /* Tom bordô combinando com o fundo do site */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1151,11 +1295,16 @@
 
   /* MUDANÇA: Garante que o overlay também cubra toda a altura */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   min-height: 100vh;
 
  
 
+=======
+  min-height: 100vh; 
+  
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   min-height: 100vh; 
   
@@ -1260,6 +1409,7 @@
 
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   top: -120px;       /* Puxa mais para cima */
 
@@ -1267,6 +1417,11 @@
 
   height: 250px;     /* Aumentado de 150px para 350px */
 
+=======
+  top: -120px;       /* Puxa mais para cima */
+  left: -350px;      /* Puxa mais para a esquerda */
+  height: 250px;     /* Aumentado de 150px para 350px */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   top: -120px;       /* Puxa mais para cima */
   left: -350px;      /* Puxa mais para a esquerda */
@@ -1292,6 +1447,7 @@
 
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   bottom: -180px;    /* Puxa mais para baixo */
 
@@ -1299,6 +1455,11 @@
 
   height: 300px;     /* Aumentado de 120px para 320px */
 
+=======
+  bottom: -180px;    /* Puxa mais para baixo */
+  left: -300px;      /* Puxa mais para a esquerda */
+  height: 300px;     /* Aumentado de 120px para 320px */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   bottom: -180px;    /* Puxa mais para baixo */
   left: -300px;      /* Puxa mais para a esquerda */
@@ -1324,6 +1485,7 @@
 
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   bottom: -300px;     /* Puxa para o canto inferior */
 
@@ -1334,10 +1496,15 @@
   width: auto;       /* Corrigido: era width 50%, agora auto para não achatar */
 
 =======
+=======
+>>>>>>> parent of 968b0bd (Update App.css)
   bottom: -300px;     /* Puxa para o canto inferior */
   right: -350px;     /* Puxa bem para a direita */
   height: 380px;     /* Aumentado drasticamente para dar destaque */
   width: auto;       /* Corrigido: era width 50%, agora auto para não achatar */
+<<<<<<< HEAD
+>>>>>>> parent of 968b0bd (Update App.css)
+=======
 >>>>>>> parent of 968b0bd (Update App.css)
   opacity: 0.7;
 
@@ -1357,9 +1524,13 @@
 
 .cta-container {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   max-width: 800px; /* Estreitei um pouco para o texto não bater nas engrenagens */
 
+=======
+  max-width: 800px; /* Estreitei um pouco para o texto não bater nas engrenagens */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   max-width: 800px; /* Estreitei um pouco para o texto não bater nas engrenagens */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1373,9 +1544,13 @@
 
   /* Aumentamos o padding lateral para empurrar as decorações para longe */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   padding: 100px 40px;
 
+=======
+  padding: 100px 40px; 
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   padding: 100px 40px; 
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1410,6 +1585,7 @@
     justify-content: center;
 
   }
+<<<<<<< HEAD
 
 
 
@@ -1419,6 +1595,18 @@
   .gears-cta-top, .wrench-footer {
 
 =======
+  .gears-cta-top, .wrench-footer {
+>>>>>>> parent of 968b0bd (Update App.css)
+=======
+  
+  .btn-whats-large {
+    font-size: 18px;
+    padding: 15px 30px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Esconde decorações muito grandes no mobile para não poluir */
   .gears-cta-top, .wrench-footer {
 >>>>>>> parent of 968b0bd (Update App.css)
     display: none;
@@ -1437,9 +1625,13 @@
 
   .cta-text {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     font-size: 26px !important; /* Ajusta o tamanho do texto no celular */
 
+=======
+    font-size: 26px !important; /* Ajusta o tamanho do texto no celular */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     font-size: 26px !important; /* Ajusta o tamanho do texto no celular */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1457,9 +1649,13 @@
 
     padding: 15px 25px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     width: 90%; /* Botão quase na largura total */
 
+=======
+    width: 90%; /* Botão quase na largura total */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     width: 90%; /* Botão quase na largura total */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1471,6 +1667,7 @@
 
   /* --- FAZENDO AS DECORAÇÕES APARECEREM NO MOBILE --- */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  
 
@@ -1480,6 +1677,12 @@
 
     height: 140px !important;  /* Tamanho menor para não cobrir tudo */
 
+=======
+  
+  .gears-cta-top {
+    display: block !important; /* Força a aparecer */
+    height: 140px !important;  /* Tamanho menor para não cobrir tudo */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   
   .gears-cta-top {
@@ -1530,9 +1733,13 @@
 
     transform: rotate(-10deg);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     width: auto; /* Garante que não achate */
 
+=======
+    width: auto; /* Garante que não achate */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     width: auto; /* Garante que não achate */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1542,11 +1749,16 @@
 
   .cta-overlay {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     padding: 100px 10px; /* Garante espaço para as peças nas quinas */
 
     min-height: 80vh;    /* No mobile pode ser um pouco menor que 100vh */
 
+=======
+    padding: 100px 10px; /* Garante espaço para as peças nas quinas */
+    min-height: 80vh;    /* No mobile pode ser um pouco menor que 100vh */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     padding: 100px 10px; /* Garante espaço para as peças nas quinas */
     min-height: 80vh;    /* No mobile pode ser um pouco menor que 100vh */
@@ -1575,8 +1787,22 @@
   overflow: hidden;
 
 }
+<<<<<<< HEAD
 
 
+=======
+/* --- SEÇÃO 5: LOCALIZAÇÃO (CORREÇÃO) --- */
+.location-section {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/fundo-oficina-rodape.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+>>>>>>> parent of 968b0bd (Update App.css)
 
 .location-overlay {
 
@@ -1587,6 +1813,7 @@
   min-height: 100vh;
 
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   align-items: center;
@@ -1600,6 +1827,11 @@
   /* MUDANÇA AQUI: Centraliza o container no eixo horizontal */
   justify-content: center; 
 >>>>>>> parent of 968b0bd (Update App.css)
+=======
+  align-items: center; 
+  /* MUDANÇA AQUI: Centraliza o container no eixo horizontal */
+  justify-content: center; 
+>>>>>>> parent of 968b0bd (Update App.css)
   padding: 60px 20px;
 
 }
@@ -1608,9 +1840,13 @@
 
 .location-container {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  max-width: 800px;
 
+=======
+ max-width: 800px;
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
  max-width: 800px;
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1628,9 +1864,13 @@
 
   flex-direction: column;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   align-items: flex-start; /* Mantém o alinhamento do texto à esquerda dentro do bloco centralizado */
 
+=======
+  align-items: flex-start; /* Mantém o alinhamento do texto à esquerda dentro do bloco centralizado */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   align-items: flex-start; /* Mantém o alinhamento do texto à esquerda dentro do bloco centralizado */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1640,9 +1880,13 @@
 
 .location-title {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  font-size: clamp(48px, 8vw, 85px);
 
+=======
+ font-size: clamp(48px, 8vw, 85px);
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
  font-size: clamp(48px, 8vw, 85px);
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1704,6 +1948,7 @@
 
 .btn-maps {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   background: linear-gradient(90deg, #ff9c00 0%, #d40000 100%);
 
@@ -1727,6 +1972,19 @@
 
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 
+=======
+  background: linear-gradient(90deg, #ff9c00 0%, #d40000 100%);
+  color: white;
+  padding: 18px 45px;
+  border-radius: 50px;
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   background: linear-gradient(90deg, #ff9c00 0%, #d40000 100%);
   color: white;
@@ -1774,9 +2032,13 @@
 
   transform: translateY(-50%) rotate(-10deg);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   height: 500px; /* Chave bem grande na lateral */
 
+=======
+  height: 500px; /* Chave bem grande na lateral */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   height: 500px; /* Chave bem grande na lateral */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1794,9 +2056,13 @@
 
     padding: 60px 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     justify-content: center; /* No mobile volta a centralizar */
 
+=======
+    justify-content: center; /* No mobile volta a centralizar */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     justify-content: center; /* No mobile volta a centralizar */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1832,7 +2098,11 @@
 
   }
 
-
+  .btn-maps {
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+  }
 
   .btn-maps {
 
@@ -1852,9 +2122,13 @@
 
   .wrench-location-right {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     display: none; /* Esconde a chave grande no mobile para não poluir */
 
+=======
+    display: none; /* Esconde a chave grande no mobile para não poluir */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
     display: none; /* Esconde a chave grande no mobile para não poluir */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1886,8 +2160,20 @@
   flex-shrink: 0; /* Impede que o ícone amasse em telas menores */
 >>>>>>> parent of 968b0bd (Update App.css)
 }
+<<<<<<< HEAD
 
 
+=======
+/* ESTILIZAÇÃO DOS NOVOS ÍCONES SVG */
+.icon-wrapper {
+  width: 60px; /* Largura fixa para manter o alinhamento do texto */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Impede que o ícone amasse em telas menores */
+}
+>>>>>>> parent of 968b0bd (Update App.css)
 
 .custom-svg-icon {
 
@@ -1913,9 +2199,13 @@
 
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   align-items: center; /* Alinha o centro do ícone com o centro do texto */
 
+=======
+  align-items: center; /* Alinha o centro do ícone com o centro do texto */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   align-items: center; /* Alinha o centro do ícone com o centro do texto */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1957,10 +2247,23 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+<<<<<<< HEAD
 .btn-maps:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.5);
 }
+=======
+/* Ajuste no botão para não ficar vazio sem o ícone do lucide */
+.btn-maps {
+  padding: 18px 60px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-maps:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+>>>>>>> parent of 968b0bd (Update App.css)
 /* No seu App.jsx, dentro do botão: 
 >>>>>>> parent of 968b0bd (Update App.css)
    <img src="/navigation-icon.svg" className="icon-nav-white" /> */
@@ -1975,9 +2278,13 @@
 
   margin-right: 12px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   filter: brightness(0) invert(1); /* Deixa o ícone SVG branco */
 
+=======
+  filter: brightness(0) invert(1); /* Deixa o ícone SVG branco */
+>>>>>>> parent of 968b0bd (Update App.css)
 =======
   filter: brightness(0) invert(1); /* Deixa o ícone SVG branco */
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -1993,6 +2300,7 @@
     height: 50px;
 
     margin-bottom: 10px;
+<<<<<<< HEAD
 
   }
 <<<<<<< HEAD
@@ -2002,11 +2310,16 @@
 =======
   
 >>>>>>> parent of 968b0bd (Update App.css)
+=======
+  }
+  
+>>>>>>> parent of 968b0bd (Update App.css)
   .custom-svg-icon {
 
     max-height: 40px;
 
   }
+<<<<<<< HEAD
 
 }
 .custom-svg-icon {
@@ -2025,9 +2338,19 @@
 =======
   
 >>>>>>> parent of 968b0bd (Update App.css)
+=======
+}
+.custom-svg-icon {
+  width: 100%;
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+  
+>>>>>>> parent of 968b0bd (Update App.css)
   /* Esse filtro transforma ícones pretos no seu Laranja exato */
 
   filter: invert(61%) sepia(94%) saturate(1455%) hue-rotate(3deg) brightness(105%) contrast(105%);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 }
@@ -2039,6 +2362,9 @@
 
 
 
+=======
+} 
+>>>>>>> parent of 968b0bd (Update App.css)
 
 
 
@@ -2075,6 +2401,7 @@
 
   filter: brightness(0) invert(1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   margin-right: 10px; /* Espaço entre ícone e texto */
 
@@ -2093,6 +2420,8 @@
   /* ... resto do seu código de botão ... */
 
 =======
+=======
+>>>>>>> parent of 968b0bd (Update App.css)
   margin-right: 10px; /* Espaço entre ícone e texto */
 }
 
@@ -2101,5 +2430,8 @@
   align-items: center;
   justify-content: center;
   /* ... resto do seu código de botão ... */
+<<<<<<< HEAD
+>>>>>>> parent of 968b0bd (Update App.css)
+=======
 >>>>>>> parent of 968b0bd (Update App.css)
 }
