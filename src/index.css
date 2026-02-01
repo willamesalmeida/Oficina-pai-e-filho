@@ -7,21 +7,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
-html, body {
-  width: 100%;
-  max-width: 100vw; /* Garante que nunca passe da largura da visão do usuário */
-  overflow-x: hidden; /* Esconde qualquer 'sobra' que causaria o balanço lateral */
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-.site-wrapper {
-  width: 100%;
-  overflow-x: hidden; /* Segunda camada de proteção */
-}
-
 body, html {
   width: 100%;
   background-color: #240b0b;
