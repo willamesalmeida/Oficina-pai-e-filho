@@ -35,7 +35,13 @@
   margin-left: -30px;
 
 }
-
+@media (max-width: 768px) {
+  .mecanico-circle {
+    width: 280px !important;  /* Diminuir para caber na tela */
+    height: 280px !important;
+    margin: 0 auto !important; /* Centralizar */
+  }
+}
 
 
 /* Ajuste específico para o Mobile */
