@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap');
 
+@media (max-width: 768px) {
+  /* Alvo: o ícone de WhatsApp dentro do botão */
+  .btn-whats svg, 
+  .btn-whats img,
+  .btn-whats-large svg,
+  .btn-whats-large img {
+    width: 32px !important;  /* Aumenta o tamanho do ícone */
+    height: 32px !important;
+    flex-shrink: 0;          /* PROIBE o navegador de diminuir o ícone */
+  }
 
+  .btn-whats, .btn-whats-large {
+    font-size: 18px !important; /* Ajusta o texto para não brigar com o ícone */
+    gap: 12px !important;       /* Espaço entre ícone e texto */
+    padding: 15px 20px !important;
+  }
+}
 /* AJUSTES EXCLUSIVOS PARA MOBILE (ATÉ 768px) */
 @media (max-width: 768px) {
   
