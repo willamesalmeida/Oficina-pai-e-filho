@@ -6,9 +6,10 @@
   .btn-whats img,
   .btn-whats-large svg,
   .btn-whats-large img {
-    width: 32px !important;  /* Aumenta o tamanho do ícone */
-    height: 32px !important;
-    flex-shrink: 0;          /* PROIBE o navegador de diminuir o ícone */
+    width: 35px !important;  /* Aumenta o tamanho do ícone */
+    height: 35px !important;
+    flex-shrink: 0;     
+    transform: translateX(15px);     /* PROIBE o navegador de diminuir o ícone */
   }
 
   .btn-whats, .btn-whats-large {
