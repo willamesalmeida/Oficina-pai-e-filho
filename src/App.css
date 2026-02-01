@@ -1811,14 +1811,19 @@
 >>>>>>> parent of 968b0bd (Update App.css)
 
 .location-overlay {
+<<<<<<< HEAD
 
   background-color: rgba(36, 11, 11, 0.88);
 
+=======
+  background-color: rgba(36, 11, 11, 0.85);
+>>>>>>> parent of 00e5211 (seção 5)
   width: 100%;
 
   min-height: 100vh;
 
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -1840,11 +1845,17 @@
 >>>>>>> parent of 968b0bd (Update App.css)
   padding: 60px 20px;
 
+=======
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: flex-start; /* Alinha o conteúdo à ESQUERDA */
+  padding: 60px 10%; /* Dá um recuo na esquerda */
+>>>>>>> parent of 00e5211 (seção 5)
 }
 
 
 
 .location-container {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -1858,9 +1869,13 @@
 >>>>>>> parent of 968b0bd (Update App.css)
   width: 100%;
 
+=======
+  max-width: 800px;
+>>>>>>> parent of 00e5211 (seção 5)
   z-index: 2;
 
   position: relative;
+<<<<<<< HEAD
 
   /* MUDANÇA AQUI: Garante que o texto dentro do bloco centralizado
 
@@ -1880,11 +1895,14 @@
 =======
   align-items: flex-start; /* Mantém o alinhamento do texto à esquerda dentro do bloco centralizado */
 >>>>>>> parent of 968b0bd (Update App.css)
+=======
+>>>>>>> parent of 00e5211 (seção 5)
 }
 
 
 
 .location-title {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -1898,9 +1916,14 @@
 >>>>>>> parent of 968b0bd (Update App.css)
   font-weight: 600;
 
+=======
+  font-size: 85px; /* Tamanho gigante do design */
+  font-weight: 900;
+>>>>>>> parent of 00e5211 (seção 5)
   color: #ff9c00;
 
   margin-bottom: 50px;
+<<<<<<< HEAD
 
   line-height: 1;
 
@@ -1908,6 +1931,9 @@
 
   /* align-self: center; */
 
+=======
+  text-transform: none;
+>>>>>>> parent of 00e5211 (seção 5)
 }
 
 
@@ -1941,9 +1967,13 @@
 .info-content p {
 
   font-size: 24px;
+<<<<<<< HEAD
 
   font-weight: 500;
 
+=======
+  font-weight: 700;
+>>>>>>> parent of 00e5211 (seção 5)
   color: #fff;
 
   line-height: 1.2;
@@ -2269,6 +2299,7 @@
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.5);
 }
+<<<<<<< HEAD
 >>>>>>> parent of 968b0bd (Update App.css)
 /* No seu App.jsx, dentro do botão: 
 >>>>>>> parent of 968b0bd (Update App.css)
@@ -2295,6 +2326,9 @@
   filter: brightness(0) invert(1); /* Deixa o ícone SVG branco */
 >>>>>>> parent of 968b0bd (Update App.css)
 }
+=======
+
+>>>>>>> parent of 00e5211 (seção 5)
 /* No mobile, garantimos que o ícone não fique gigante */
 
 @media (max-width: 768px) {
@@ -2356,6 +2390,7 @@
   /* Esse filtro transforma ícones pretos no seu Laranja exato */
 
   filter: invert(61%) sepia(94%) saturate(1455%) hue-rotate(3deg) brightness(105%) contrast(105%);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -2440,4 +2475,6 @@
 >>>>>>> parent of 968b0bd (Update App.css)
 =======
 >>>>>>> parent of 968b0bd (Update App.css)
+=======
+>>>>>>> parent of 00e5211 (seção 5)
 }
